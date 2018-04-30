@@ -1,10 +1,11 @@
 <html>
 <head>
 <script language="javascript">
+	
 var i=0;
 var sayilar= [];
 function ekle()
-	
+	{
 	var i = parseInt("i","i")+ "<br>";
 	
 	var sayi1= parseInt(window.document.forms.form1.TxtSayi.value);
@@ -14,9 +15,24 @@ function ekle()
 var btnekle=document.getElementById("Ekle");
 	btnekle.onclick=function(){
 		window.alert("Sayıyı Diziye Eklediniz");
-
-
-
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||	
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||		
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+	}
+      if (i<5)
+        { sayilar[i]=sayi1;
+         i+=1;  alert("Sayı Eklendi"); 
+		 document.forms.form1.TxtSayi.value="";
+		 document.forms.form1.TxtSayi.focus();
+	 }
+      else alert("Dizi Dolu");
+  }
+	 
+	   function yaz()
+  {
+    for(i=0;i<5;i++)  document.write(sayilar[i]+"<br>"); 
+  }
 
 
 
